@@ -1,0 +1,51 @@
+.login {
+  margin-left: 40%;
+  margin-top: 80px;
+}
+.loginform {
+  height: 60vh;
+  width: 50vw;
+}
+
+.loginform p {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.loginform input {
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-bottom: 1px black solid;
+  margin-bottom: 20px;
+}
+
+.loginbutton {
+  margin-right: 20px;
+  padding: 10px 30px;
+  background: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.loginbutton:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .login {
+    margin-left: 20%;
+  }
+  .loginform p {
+    font-size: 15px;
+  }
+  input {
+    width: 80%;
+    font-size: 15px;
+  }
+  .loginbutton {
+    height: 30px;
+    font-size: 15px;
+    padding: 0px 30px;
+  }
+}

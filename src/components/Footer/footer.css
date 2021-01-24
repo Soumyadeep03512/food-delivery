@@ -1,0 +1,42 @@
+.addressSpan {
+  font-size: 22px;
+}
+.footer {
+  margin-top: 40px;
+  background: black;
+  height: 250px;
+  width: 100%;
+  color: #cdc9c9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footeritems {
+  cursor: pointer;
+}
+
+.navlinks p {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 200px;
+    margin-left: -10px;
+    width: 110%;
+  }
+  .address,
+  .footeritems {
+    font-size: 15px;
+  }
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(3, 15%);
+  }
+}

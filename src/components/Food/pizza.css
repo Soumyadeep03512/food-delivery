@@ -1,0 +1,119 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(3, 27%);
+  justify-content: center;
+  margin-left: 7vw;
+  row-gap: 20px;
+}
+
+.home-card {
+  height: 270px;
+  width: 250px;
+  -webkit-box-shadow: 7px 8px 13px 0px rgba(196, 196, 196, 1);
+  -moz-box-shadow: 7px 8px 13px 0px rgba(196, 196, 196, 1);
+  box-shadow: 7px 8px 13px 0px rgba(196, 196, 196, 1);
+}
+
+.home-card img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 0px;
+  font-size: 1.2em;
+}
+
+.price {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.foodprice {
+  margin-left: 10px;
+}
+.veg-button {
+  margin-right: 5px;
+  height: 40px;
+  padding: 5px 15px 0px 15px;
+
+  border: 1px solid #6dc931;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+.veg-button:hover {
+  background: #cae7b5;
+}
+.nonveg-button:hover {
+  background: #ecaea3;
+}
+.nonveg-button {
+  margin-right: 5px;
+  height: 40px;
+  padding: 5px 15px 0px 15px;
+  border: 1px solid #ff6945;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+.green-line {
+  width: 50%;
+  margin-left: 0px;
+  color: #6dc931;
+}
+
+.red-line {
+  width: 50%;
+  margin-left: 0px;
+  color: #ff6945;
+}
+.desc {
+  color: grey;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 0px;
+    margin-left: 18px;
+  }
+  .home-card {
+    height: 200px;
+    width: 150px;
+  }
+
+  .home-card img {
+    height: 100px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .desc {
+    display: none;
+  }
+  .price {
+    align-items: center;
+    margin-top: -5px;
+  }
+  .foodprice {
+    font-size: 13px;
+  }
+  .veg-button {
+    margin-right: 5px;
+    height: 19px;
+    padding: 4px 4px;
+    font-size: 13px;
+  }
+  .nonveg-button {
+    margin-right: 5px;
+    height: 19px;
+    padding: 4px 4px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,63 @@
+.cheftitle {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.chefhr {
+  width: 40%;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.chefcard {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-self: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.chefcard img {
+  height: 250px;
+  width: 350px;
+}
+
+.chefname {
+  margin-top: 10vh;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.chefdesc {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cheftitle {
+    font-size: 20px;
+  }
+
+  .chefcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .chefcard img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .chefname {
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .chefdesc {
+    margin-top: -20px;
+    font-size: 14px;
+  }
+}

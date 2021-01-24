@@ -1,0 +1,31 @@
+.foodnav-container {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.foodlist-items {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: center;
+  margin-left: 10vw;
+}
+
+.foodlist-item {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .foodnav-container {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .foodlist-item {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 20px;
+  }
+}
